@@ -1,0 +1,38 @@
+name: Bug report
+description: Something in LMU Rewind doesn't work as expected.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues are public. Anything you write or attach here, including an exported diagnostics file, can be read by anyone.
+  - type: input
+    id: version
+    attributes:
+      label: LMU Rewind version
+      placeholder: "1.1.2"
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: LMU version, car and track
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: The exact message LMU Rewind showed, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Reproduce the problem, then choose Activity → Export diagnostics and attach the JSON file here (it is public). For a display issue, add a screenshot and your monitor setup.
